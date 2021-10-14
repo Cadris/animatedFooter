@@ -1,23 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
-
-/* @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+@import 'variables.css';
 /* font-family: 'Ubuntu', sans-serif; */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
 }
 body{
     display: flex;
     min-height: 100vh;
-    background: #333;
+    background: #fff;
     justify-content: flex-end;
     align-items: flex-end;
 }
 footer{
     position: relative;
-    background: #3586ff;
+    background: var(--theme-color);
     width: 100%;
     min-height: 100px;
     padding: 20px 50px;
@@ -48,19 +49,20 @@ footer .social_icon li a{
     transition: 0.5s;
 }
 footer .social_icon li a:hover{
-    transform: translateY(-10px);
+    transform: translateY(-6px);
 }
 footer .menu li a{
     font-size: 1.2em;
     color: #fff;
-    margin: 0 10px;
+    margin: 0 20px;
     display: inline-block;
-    transition: 0.5s;
+    transition: 0.3s;
     text-decoration: none;
     opacity: 0.75;
 }
 footer .menu li a:hover{
     opacity: 1;
+    font-size: 1.6em;
 }
 footer p{
     color: #fff;
@@ -117,4 +119,7 @@ footer .wave#wave4{
     100%{
         background-position-x: 1000px;
     }
+}
+ion-icon {
+    pointer-events: none;
 }
